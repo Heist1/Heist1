@@ -29,7 +29,7 @@
 - git config --global user.name Heist1
 
 **Uploading a file**
-- Change the current working directory to your local repository(C:\Users\Username\ASD>).
+- Change the current working directory to your local repository(C:\Users\Username\Heist1>).
 - git pull
 - git Fetch
 - git add prova.cpp         //git add . (instead of add prova.cpp) for all the files in the directory.
