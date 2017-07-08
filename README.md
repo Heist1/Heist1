@@ -7,7 +7,7 @@
 
 **Git Terminal(Debian)**
 - $ sudo dnf install git-all
- 
+
 **Git Terminal(Windows 32Bit)**
 - https://github.com/git-for-windows/git/releases/download/v2.13.2.windows.1/Git-2.13.2-32-bit.exe
 
