@@ -1,6 +1,6 @@
-#TUTORIAL
+# TUTORIAL
 
-##1) Git installation
+## 1) Git installation
 
 **Git Terminal(Ubuntu)**
 - $ sudo apt-get install git-all
@@ -15,14 +15,14 @@
  
  
  
-##2) Git cloning (first time only)
+## 2) Git cloning (first time only)
 
 **Git Cloning Terminal**
 - git clone https://github.com/Heist1/Heist1
  
  
  
-##3) Git Pull (to sincronize github folder)
+## 3) Git Pull (to sincronize github folder)
 
 **Git Pull**
 - Change the current working directory to your local repository.
@@ -30,7 +30,7 @@
  
  
  
-##4) For Collaborators only
+## 4) For Collaborators only
  
 **GitHub Collaborator Account**
 - email:heist1@munoubengoshi.gq
