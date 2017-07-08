@@ -11,7 +11,8 @@
 **Git Terminal(Windows 32Bit)**
 - https://github.com/git-for-windows/git/releases/download/v2.13.2.windows.1/Git-2.13.2-32-bit.exe
 
-**Git Terminal(Windows 64Bit)**- https://github.com/git-for-windows/git/releases/download/v2.13.2.windows.1/Git-2.13.2-64-bit.exe
+**Git Terminal(Windows 64Bit)**
+- https://github.com/git-for-windows/git/releases/download/v2.13.2.windows.1/Git-2.13.2-64-bit.exe
  
  
  
