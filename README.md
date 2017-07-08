@@ -45,6 +45,6 @@
 - Change the current working directory to your local repository(C:\Users\Username\Heist1>).
 - git pull
 - git Fetch
-- git add prova.cpp         //git add . (instead of add prova.cpp) for all the files in the directory.
-- git commit -m "prova"
+- git add test.cpp         //git add . (instead of add test.cpp) for all the files in the directory.
+- git commit -m "test"
 - git push origin master
