@@ -22,25 +22,15 @@ int main()
 			{	
 				bool trovato = false;
 				while(!trovato)
-				{
-					if(i+cont < n && mat[i+cont][j]== '#')
-						trovato = true;
-					if(i-cont > 0 && mat[i-cont][j] == '#')
-						trovato = true;
-					if(i-cont > 0 && j-cont > 0 && mat[i-cont][j-cont] == '#')
-						trovato = true;
-					if(j-cont > 0 && mat[i][j-cont] == '#')
-						trovato = true;
-					if(j-cont > 0 && i+cont<n &&mat[i+cont][j-cont] == '#')
-						trovato = true;
-					if(i-cont > 0 && j+cont<n && mat[i-cont][j+cont] == '#')
-						trovato = true;
-					if(j+cont<n &&mat[i][j+cont] == '#')
-						trovato = true;
-					if(j+cont <n && i+cont<n &&mat[i+cont][j+cont] == '#')
-						trovato = true;
-					if(cont>n)
-						break;
+				{	
+					
+					for(int u = i-cont; u<=i+cont && !trovato; u++)
+						for(int k = j-cont; k<=j+cont && !trovato; k++)
+							if(k> 0 && k<n && mat[u][k] == '#')
+							{
+								trovato = true;
+								break;
+							}
 					cont++;
 				}
 				if(cont>min && trovato )
