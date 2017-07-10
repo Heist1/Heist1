@@ -5,7 +5,7 @@
 #include <list>
 #include <cstring>
 #include "Grafo.h"
-int camminoMinimale(Grafo g,int i, int j);
+int camminoMinimale(Grafo g,int i, int j,int );
 using namespace std;
 int main()
 {
@@ -16,7 +16,6 @@ int main()
 	n=atoi(token);
 	token=strtok(NULL," ");
 	m=atoi(token);
-
 	Grafo g(n*m);
 	vector<bool> vertici_corpi(g.n()+1,false);
 	bool matrice_mappa[n][m]={false};	
@@ -47,8 +46,9 @@ int main()
 			for(int j=1;j<=g.n();j++)
 				if(vertici_corpi[j])
 				{
-					int tmp=camminoMinimale(g,i,j);
-					if(tmp<minimo_corrente)
+					int spesa=0;
+					int tmp=camminoMinimale(g,i,j,minimo_corrente);
+					if(tmp<minimo_corrente && tmp!=-1)
 						minimo_corrente=tmp;
 				}
 			if(minimo_corrente>valoreMax){
@@ -59,7 +59,7 @@ int main()
 	cout<<(nodoMax-1)/m<<" "<<(nodoMax-1)%m;		
 					
 }
-int camminoMinimale(Grafo G, int start, int end)
+int camminoMinimale(Grafo G, int start, int end,int minimo_corrente)
 {
 	int costo=0;
 	list<int> coda;
@@ -69,7 +69,7 @@ int camminoMinimale(Grafo G, int start, int end)
 	visitati[start] = true;
 
 	bool found = false;
-
+	int spesa=0;
 	while(!coda.empty() && !found)
 	{
 		int current = coda.front();
@@ -83,6 +83,9 @@ int camminoMinimale(Grafo G, int start, int end)
 				if(i == end)	
 					found = true;
 			}
+		spesa++;
+		if(spesa>minimo_corrente)
+			return -1;
 	}
 	list<int> cammino;
 	
