@@ -26,7 +26,7 @@ int main()
 					
 					for(int u = i-cont; u<=i+cont && !trovato; u++)
 						for(int k = j-cont; k<=j+cont && !trovato; k++)
-							if(k> 0 && k<n && mat[u][k] == '#')
+							if(u >= 0 && u < n && k>= 0 && k<m && mat[u][k] == '#')
 							{
 								trovato = true;
 								break;
